@@ -1,6 +1,6 @@
-## Purpose
+## OvoPath: A graphical user interface tool for digital analysis of ovarian follicles
 
-**This document explains the steps to analyse Haematoxylin and Eosin (H&E)-stained ovarian follicles with an open-source software (QuPath).**
+**This protocol explains the steps to analyse Haematoxylin and Eosin (H&E)-stained ovarian follicles with an open-source software (QuPath).**
 
 Analyses include but are not limited to:
 
