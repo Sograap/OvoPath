@@ -70,6 +70,7 @@ Precise follicle and oocyte segmentation must be performed prior to running the 
 3.Press “Run Assign follicle\_ID” to assign each the class “Follicle” to the annotations and provide an ID code based on its coordinate values in the tissue section (F\_0, F\_1…). This script also saves follicle annotations that will appear in the QuPath project folder. In case you lose your annotations in your project you can drag and drop the .geojson file on your screen and there they are! **NOTE**: This will take a little time. Please be patient and wait for your IDs to appear on the screen.
 
 Follicle Annotation Representative Image
+
 ![image](https://github.com/user-attachments/assets/1445bd65-040e-4d05-8a71-2749ce77c175)
 
 
@@ -78,9 +79,11 @@ Follicle Annotation Representative Image
 1.  Go to “Script 2. Detect\_GC\_nuclei”. Introduce in the white bar the file path for **he\_augment.pb**. Please make sure that your file path extension uses “/” and not “\\”. **make sure you copy the .pb file and not the folder in which the .pb file is located!** ****Press “Run Detect GC nuclei”. Unspecific detections will appear inside the oocyte but these will be removed automatically in the following steps. If granulosa cells fail to be accurately detected, two parameters can be also tailored at this step: “Probability TH Detection Stardist” and “Image Resolution Stardist”. If parameters are changed, the script can be rerun as new detections will replace previous ones. If issues are found at this step create an “Issue” in our repository (https://docs.github.com/es/issues/tracking-your-work-with-issues/using-issues/creating-an-issue). **NOTE**: This will take a little time. Please be patient and wait for granulosa cell segmentations to appear. Depending on the number of follicles in the tissue slice, segmentation can take up to ~10 minutes.
 
 Granuolsa Cell Nuclei segmentation 
+
 ![image](https://github.com/user-attachments/assets/a8f60796-572b-4048-ba1c-a1b336f5ffd1)
 
 Granulosa Cell nuclei cleaning
+
 ![image](https://github.com/user-attachments/assets/6e32d340-d988-4d82-8870-97c360c809e9)
 
 ## Oocyte annotation
@@ -92,9 +95,11 @@ Granulosa Cell nuclei cleaning
 5.  Press “Run Extract\_data”. This script extracts data from follicle parent annotations, so each line is a follicle with all integrated data from oocyte and granulosa cells. A folder with individual GC detection data will be also generated in case we want to explore the parameters of each cell nuclei.
 
 Oocyte segmentation and data integration
+
 ![image](https://github.com/user-attachments/assets/438d3415-a767-4154-a551-04be223572e6)
 
 Follicle classification and data extraction 
+
 ![image](https://github.com/user-attachments/assets/7c223a42-ff1b-4942-b8d0-e32d58265537)
 
 
