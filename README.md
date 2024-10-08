@@ -16,10 +16,10 @@ Analyses include but are not limited to:
 
 Requirements to perform these tasks:
 
-*   Digital images of (H&E)-stained ovarian tissue. A wide range of image formats can be opened in QuPath ([Supported image formats — QuPath 0.4.4 documentation](https://qupath.readthedocs.io/en/0.4/docs/intro/formats.html)). If possible, avoid generic image formats such as jpeg, png as they will typically not preserve the required pixel size. 
+*   Digital images of (H&E)-stained ovarian tissue. A wide range of image formats can be opened in QuPath ([Supported image formats — QuPath 0.5 documentation](https://qupath.readthedocs.io/en/0.5/docs/intro/formats.html)). If possible, avoid generic image formats such as jpeg, png as they will typically not preserve the required pixel size. 
 *   QuPath v0.5.0 https://qupath.github.io/
 *   Scripts:
-    *   OvoPath\_GUI.groovy
+    *   OvoPath\_GUI.groovy (This script works with QuPath version v0.5.0 and above )
 *   Stardist:
     *   Install the extension:
         *   Read me: [https://github.com/qupath/qupath-extension-stardist?tab=readme-ov-file#installing](https://github.com/qupath/qupath-extension-stardist?tab=readme-ov-file#installing)
