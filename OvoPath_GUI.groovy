@@ -1,6 +1,7 @@
-/* Update Tab pane:  GUI for using Auto-Threshold methods 
- * 
- *  
+/* OvoPath GUI. 
+ * This GUI is created with the paper: Digital analysis of ovarian tissue: generating a standardized method of follicle analysis. 
+ * Requires QuPath Version 0.5.0 or above
+ *
  * @authors Isaac Vieco-Martí & @Sofia Granados-Aparici
  *  
  */
