@@ -16,14 +16,14 @@ Analyses include but are not limited to:
 
 Requirements to perform these tasks:
 
-*   Digital images of (H&E)-stained ovarian tissue. A wide range of image formats can be opened in QuPath ([Supported image formats — QuPath 0.5 documentation](https://qupath.readthedocs.io/en/0.5/docs/intro/formats.html)). If possible, avoid generic image formats such as jpeg, png as they will typically not preserve the required pixel size. 
-*   QuPath v0.5.0 https://qupath.github.io/
+*   Digital images of (H&E)-stained ovarian tissue. A wide range of image formats can be opened in QuPath ([Supported image formats — QuPath 0.6 documentation](https://qupath.readthedocs.io/en/stable/docs/intro/formats.html)). If possible, avoid generic image formats such as jpeg, png as they will typically not preserve the required pixel size. 
+*   QuPath v0.6.0 https://qupath.github.io/
 *   Scripts:
-    *   OvoPath\_GUI.groovy (This script works with QuPath version v0.5.0 and above )
+    *   OvoPath\_GUI.groovy (This script works with QuPath version v0.6.0 and above )
 *   Stardist:
     *   Install the extension:
-        *   Read me: [https://github.com/qupath/qupath-extension-stardist?tab=readme-ov-file#installing](https://github.com/qupath/qupath-extension-stardist?tab=readme-ov-file#installing)
-        *   File: https://github.com/qupath/qupath-extension-stardist/releases/download/v0.5.0/qupath-extension-stardist-0.5.0.jar
+        *   Read me: [https://github.com/qupath/qupath-extension-stardist](https://github.com/qupath/qupath-extension-stardist) 
+        *   File: https://github.com/qupath/qupath-extension-stardist/releases/download/v0.6.0/qupath-extension-stardist-0.6.0.jar
     *   Model: he\_heavy\_augment.pb (you will find it in the “scripts” folder)
         *   Read me: [https://github.com/qupath/models/tree/main/stardist](https://github.com/qupath/models/tree/main/stardist)
         *   File: [https://github.com/qupath/models/raw/main/stardist/he\_heavy\_augment.pb](https://github.com/qupath/models/raw/main/stardist/he_heavy_augment.pb)
@@ -48,7 +48,7 @@ Precise follicle and oocyte segmentation must be performed prior to running the 
     1.  Create a principal empty folder with the name of your experiment
     2.  Create a folder inside for the images.
     3.  Create a folder where all your QuPath data will be stored
-2.  Open QuPath v0.5.0
+2.  Open QuPath v0.6.0
     1.  On the top left of the window click “Create project”
         1.  Go to folder created in 1.3.
     2.  On the top left of the window click “Add images”
@@ -123,15 +123,19 @@ Follicle classification and data extraction
 
 Windows:
 
-[https://github.com/qupath/qupath/releases/download/v0.5.0/QuPath-v0.5.0-Windows.msi](https://github.com/qupath/qupath/releases/download/v0.5.0/QuPath-v0.5.0-Windows.msi)
+https://github.com/qupath/qupath/releases/download/v0.6.0/QuPath-v0.6.0-Windows.msi
 
-Mac:
+Mac (Intel):
 
-[https://github.com/qupath/qupath/releases/download/v0.5.0/QuPath-v0.5.0-Mac-x64.pkg](https://github.com/qupath/qupath/releases/download/v0.5.0/QuPath-v0.5.0-Mac-x64.pkg)
+https://github.com/qupath/qupath/releases/download/v0.6.0/QuPath-v0.6.0-Mac-x64.pkg
+
+Mac (Apple Sillicon):
+
+https://github.com/qupath/qupath/releases/download/v0.6.0/QuPath-v0.6.0-Mac-arm64.pkg
 
 Linux:
 
-https://github.com/qupath/qupath/releases/download/v0.5.0/QuPath-v0.5.0-Linux.tar.xz
+https://github.com/qupath/qupath/releases/download/v0.6.0/QuPath-v0.6.0-Linux.tar.xz
 
 ## Annotations in QuPath
 
