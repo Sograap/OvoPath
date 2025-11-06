@@ -59,13 +59,21 @@ Precise follicle and oocyte segmentation must be performed prior to running the 
             3.  Leave ticked Auto-generate pyramids
         3.  Click “Import”
 
-## Follicle annotation
+
+
+## Follicle annotation 
 
 1.Donwload “OvoPath\_GUI.groovy” and “he\_augment.pb “ files. Drag and drop OvoPath\_GUI.groovy directly onto QuPath screen and press the “Run” button at the bottom right corner of the window. A set of steps to perform the analysis will appear on the right of the QuPath screen.
 
-2.Carefully annotate follicle area using the brush and wand tools.
+2.Carefully annotate follicle area using the brush and wand tools. 
 
 **NOTE**: Exclude, as much as possible, the surrounding stromal cells (especially in the smallest follicles) and theca cells (from secondary follicles onwards) as they may be considered as granulosa cells in the classification script. Inclusion of extrafollicular cells will create improper classification and analyses moving forward.
+
+>[!IMPORTANT]
+>  **NEW!** 
+> **OvoPath** has now an automatic follicle segmentation!
+> To try it on, follow the instructions on this [link](https://github.com/Sograap/OvoPath/tree/main/Automatic_follicle_segmentation)
+>
 
 3.Press “Run Assign follicle\_ID” to assign each the class “Follicle” to the annotations and provide an ID code based on its coordinate values in the tissue section (F\_0, F\_1…). This script also saves follicle annotations that will appear in the QuPath project folder. In case you lose your annotations in your project you can drag and drop the .geojson file on your screen and there they are! **NOTE**: This will take a little time. Please be patient and wait for your IDs to appear on the screen.
 
