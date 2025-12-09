@@ -18,7 +18,7 @@ You can check this [here](https://qupath.readthedocs.io/en/latest/docs/deep/djl.
 
 ## 2. Download U-Net weights and tutorials
 
-- The U-Net model weights and tutorials are available in the North Western cloud (available soon).
+- The U-Net model weights and tutorials are available [here](https://drive.google.com/drive/folders/1PLWm6D0ISTOdkImtSeQu3klWU0VggQwi?usp=sharing).
 - The tutorials cover all **OvoPath** features and will be updated over time.
 
 #### Download & place the model(s)
