@@ -91,7 +91,7 @@ def runPostProcessingSegmentation(outputClassificationString,fillHoles,minArea,m
     //now remove the objects filtered by area and eccentricity and solidity
      
 
-    def toDelete = getAnnotationObjects().findAll { it.getPathClass() == getPathClass(outputClassificationString) && 
+    def toDelete = getAnnotationObjects().findAll { it.getPathClass().toString()== outputClassificationString && 
     (it.getROI().getScaledArea(pixelWidth, pixelHeight) < minArea ||
     it.measurements["Eccentricity"] > maxExcentricity ||
     it.measurements["Solidity"] < minSolidity )
