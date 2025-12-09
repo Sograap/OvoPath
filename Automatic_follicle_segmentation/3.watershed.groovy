@@ -21,7 +21,7 @@
 
 //Set the input and output classifcations
 inputClassificationObjectsString = "Other"
-outputClassificationString = "Follicle"
+outputClassificationString = null
 
 //Remove Input Objects
 removeInputObjects = true
