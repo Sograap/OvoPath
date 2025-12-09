@@ -37,7 +37,7 @@
  
  String parentAnnotationsClass = "Tissue"
  
- String outputClassName = "Follicle"
+ String outputClassName = null
  
  int overlap = 30
 
