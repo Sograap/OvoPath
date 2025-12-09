@@ -1,4 +1,13 @@
-## OvoPath: A graphical user interface tool for digital analysis of ovarian follicles
+>[!IMPORTANT]
+>  **NEW update!** 
+> **OvoPath** has now an automatic follicle segmentation!
+> To try it on, follow the instructions on this [link](https://github.com/Sograap/OvoPath/tree/main/Automatic_follicle_segmentation)
+>
+>  **NEW update!** 
+> **OvoPath** has now an automatic oocyte detection!
+> Try it on Ovopath_GUI_NEW
+>
+>## OvoPath: A graphical user interface tool for digital analysis of ovarian follicles
 
 **This protocol explains the steps to analyse Haematoxylin and Eosin (H&E)-stained ovarian follicles with an open-source software (QuPath).**
 
@@ -96,11 +105,18 @@ Granulosa Cell nuclei cleaning
 
 ## Oocyte annotation
 
-1.  Annotate oocyte area using the brush and wand tools. **NOTE**: Annotate ONLY follicles with clear/visible oocyte cytoplasms. Classifications of follicles without a clear oocyte will NOT reflect accurate feature data.
 2.  Go to “Script 3. Clean\_and\_assign\_GC\_parameters and press “Run Clean\_and\_assign\_GC\_parameters.groovy. Unspecific detections inside the oocyte are removed and key parameters from granulosa cells are stored in the follicle parent annotation. If unspecific detections remain, cleaning can be modified by changing the values of three parameters: minimum nuclei area, maximum nuclei area and mean hematoxylin. They refer to the minimum/ maximum nuclei area values and minimum mean hematoxylin intensity value from which detected nuclei are considered specific. You can click on the unspecific detection and look for these values by scrolling down on the bottom left side of the QuPath screen. Modify any default value if necessary. This script also saves granulosa cell detections. **NOTE**. Each granulosa also contains the name of the follicle parent.
-3.  Press “Run script 4. Add oocyte data”. Oocyte area, circularity, mean hematoxylin and mean eosin values are stored in the follicle parent annotation. This script also saves oocyte annotations.
-4.  Go to “Script 5. Assign follicle stages”. Follicles are staged based on granulosa cell number per follicle, granulosa cell eccentricity and ratio of granulosa cell number per follicle area. You can run the default values or modify them depending on the tissue origin (e.g mouse ovarian tissue). Press “Run Assign follicle stages”. Follicles with no oocyte segmentation are classified as “Ignore”. Oocyte annotations will disappear from the project but they are saved after running script 4 in case you want them back. **NOTE:** If errors or issues are found, create an “Issue” in our repository. You can also post suggestions about which parameters to include that can improve the script.
-5.  Press “Run Extract\_data”. This script extracts data from follicle parent annotations, so each line is a follicle with all integrated data from oocyte and granulosa cells. A folder with individual GC detection data will be also generated in case we want to explore the parameters of each cell nuclei.
+3.  If oocytes are annotated manually, draw oocyte area using the brush and wand tools. **NOTE**: Annotate ONLY follicles with clear/visible oocyte cytoplasms. Classifications of follicles without a clear oocyte will NOT reflect accurate feature data.
+   
+>[!IMPORTANT]
+>  **NEW!** 
+> **OvoPath** has now an automatic oocyte detection!
+> Try it on Ovopath_GUI_NEW
+>
+
+4.  Press “Run script 4. Add oocyte data”. Oocyte area, circularity, mean hematoxylin and mean eosin values are stored in the follicle parent annotation. This script also saves oocyte annotations.
+5.  Go to “Script 5. Assign follicle stages”. Follicles are staged based on granulosa cell number per follicle, granulosa cell eccentricity and ratio of granulosa cell number per follicle area. You can run the default values or modify them depending on the tissue origin (e.g mouse ovarian tissue). Press “Run Assign follicle stages”. Follicles with no oocyte segmentation are classified as “Ignore/Disclude”. Oocyte annotations will disappear from the project but they are saved after running script 4 in case you want them back. **NOTE:** If errors or issues are found, create an “Issue” in our repository. You can also post suggestions about which parameters to include that can improve the script.
+6.  Press “Run Extract\_data”. This script extracts data from follicle parent annotations, so each line is a follicle with all integrated data from oocyte and granulosa cells. A folder with individual GC detection data will be also generated in case we want to explore the parameters of each cell nuclei.
 
 Oocyte segmentation and data integration
 
