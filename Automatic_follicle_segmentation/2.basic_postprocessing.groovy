@@ -24,7 +24,7 @@
 
 
  //To Complete
-def outputClassificationString = "Follicle"
+def outputClassificationString = "null"
 def fillHoles = true
 def minArea = 500 
 def maxExcentricity = 0.9 
