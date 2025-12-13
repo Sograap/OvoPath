@@ -374,7 +374,7 @@ ScrollPane buildPane() {
     pane.add(minPrimordialEccentricity, 1, row, 1, 1)
     
     //FILTER 1:granulosa cells
-    def maxGranulosaCells = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 40, 20, 1));
+    def maxGranulosaCells = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 30, 15, 1));
     maxGranulosaCells.setEditable(true);
     FXUtils.restrictTextFieldInputToNumber(maxGranulosaCells.getEditor(), true);
     maxGranulosaCells.setTooltip(new Tooltip("Maximum number of Granulosa Cells"))
@@ -384,7 +384,7 @@ ScrollPane buildPane() {
     pane.add(labelMaxGranulosaCells, 0, row, 1, 1)
     pane.add(maxGranulosaCells, 1, row, 1, 1)
     
-    def maxCuboidGCNumber = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 20, 1, 1));
+    def maxCuboidGCNumber = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 10, 1, 1));
     maxCuboidGCNumber.setEditable(true);
     FXUtils.restrictTextFieldInputToNumber(maxCuboidGCNumber.getEditor(), true);
     maxCuboidGCNumber.setTooltip(new Tooltip("Maximum cuboidal GC Number"))
@@ -402,7 +402,7 @@ ScrollPane buildPane() {
     pane.add(step5Filter3, 0,row, 1, 1)
     
     //FILTER 3: Transitional eccentricity
-    def maxTransitionalGCEccentricity = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 1, 0.8, 0.01));
+    def maxTransitionalGCEccentricity = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 1, 0.79, 0.01));
     maxTransitionalGCEccentricity.setEditable(true);
     FXUtils.restrictTextFieldInputToNumber(maxTransitionalGCEccentricity.getEditor(), true);
     maxTransitionalGCEccentricity.setTooltip(new Tooltip("Maximum Median GC Eccentricity"))
@@ -422,7 +422,7 @@ ScrollPane buildPane() {
     pane.add(step5Filter2, 0,row, 1, 1)
     
     //FILTER 2: primary eccentricity
-    def maxPrimaryEccentricity = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 1, 0.8, 0.01));
+    def maxPrimaryEccentricity = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 1, 0.85, 0.01));
     maxPrimaryEccentricity.setEditable(true);
     FXUtils.restrictTextFieldInputToNumber(maxPrimaryEccentricity.getEditor(), true);
     maxPrimaryEccentricity.setTooltip(new Tooltip("Maximum median GC Eccentricity"))
@@ -433,7 +433,7 @@ ScrollPane buildPane() {
     pane.add(maxPrimaryEccentricity, 1, row, 1, 1)
     
     //FILTER 2: min granulosa primary 
-    def minGranulosaCellsPrimary = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 30, 20, 1));
+    def minGranulosaCellsPrimary = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 30, 15, 1));
     minGranulosaCellsPrimary.setEditable(true);
     FXUtils.restrictTextFieldInputToNumber(minGranulosaCellsPrimary.getEditor(), true);
     minGranulosaCellsPrimary.setTooltip(new Tooltip("Maximum number of Granulosa Cells"))
@@ -445,7 +445,7 @@ ScrollPane buildPane() {
     
     
     //FILTER 2: max granulosa primary 
-    def maxGranulosaCellsPrimary = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 60, 40, 1));
+    def maxGranulosaCellsPrimary = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 60, 30, 1));
     maxGranulosaCellsPrimary.setEditable(true);
     FXUtils.restrictTextFieldInputToNumber(maxGranulosaCellsPrimary.getEditor(), true);
     maxGranulosaCellsPrimary.setTooltip(new Tooltip("Maximum number of Granulosa Cells"))
@@ -479,7 +479,7 @@ ScrollPane buildPane() {
     step5Filter4.setStyle("-fx-underline: true") 
     pane.add(step5Filter4, 0,row, 1, 1)
     
-    def minNumberCellsSecondary= new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 80, 40, 1));
+    def minNumberCellsSecondary= new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 80, 30, 1));
     minNumberCellsSecondary.setEditable(true);
     FXUtils.restrictTextFieldInputToNumber(minNumberCellsSecondary.getEditor(), true);
     minNumberCellsSecondary.setTooltip(new Tooltip("Minimum GC number"))
@@ -490,7 +490,7 @@ ScrollPane buildPane() {
     pane.add(minNumberCellsSecondary, 1, row, 1, 1)
     
     
-    def minFollicleAreaSecondary= new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 100000, 2000, 1));
+    def minFollicleAreaSecondary= new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 100000, 3500, 1));
     minFollicleAreaSecondary.setEditable(true);
     FXUtils.restrictTextFieldInputToNumber(minFollicleAreaSecondary.getEditor(), true);
     minFollicleAreaSecondary.setTooltip(new Tooltip("Minimum Follicle Area (microns^2)"))
@@ -501,7 +501,7 @@ ScrollPane buildPane() {
     pane.add(minFollicleAreaSecondary, 1, row, 1, 1)
     
     
-    def maxFollicleAreaSecondary= new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 1000000, 8000, 1));
+    def maxFollicleAreaSecondary= new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 1000000, 5000, 1));
     maxFollicleAreaSecondary.setEditable(true);
     FXUtils.restrictTextFieldInputToNumber(maxFollicleAreaSecondary.getEditor(), true);
     maxFollicleAreaSecondary.setTooltip(new Tooltip("Maximum Follicle Area (microns^2)"))
@@ -523,7 +523,7 @@ ScrollPane buildPane() {
     step5Filter5.setStyle("-fx-underline: true") 
     pane.add(step5Filter5, 0,row, 1, 1)
     
-    def minNumberCellsAntral= new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 100, 80, 1));
+    def minNumberCellsAntral= new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 100, 70, 1));
     minNumberCellsAntral.setEditable(true);
     FXUtils.restrictTextFieldInputToNumber(minNumberCellsAntral.getEditor(), true);
     minNumberCellsAntral.setTooltip(new Tooltip("Minimum GC number"))
@@ -555,7 +555,7 @@ ScrollPane buildPane() {
     step5Filter6.setStyle("-fx-underline: true") 
     pane.add(step5Filter6, 0,row, 1, 1)
     
-    def ignoreFollicle= new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 100, 40, 1));
+    def ignoreFollicle= new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 100, 60, 1));
     ignoreFollicle.setEditable(true);
     FXUtils.restrictTextFieldInputToNumber(ignoreFollicle.getEditor(), true);
     ignoreFollicle.setTooltip(new Tooltip("Maximum Follicle GC ratio"))
