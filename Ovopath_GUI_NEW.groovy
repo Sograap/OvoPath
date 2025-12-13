@@ -374,7 +374,7 @@ ScrollPane buildPane() {
     pane.add(minPrimordialEccentricity, 1, row, 1, 1)
     
     //FILTER 1:granulosa cells
-    def maxGranulosaCells = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 30, 15, 1));
+    def maxGranulosaCells = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 30, 10, 1));
     maxGranulosaCells.setEditable(true);
     FXUtils.restrictTextFieldInputToNumber(maxGranulosaCells.getEditor(), true);
     maxGranulosaCells.setTooltip(new Tooltip("Maximum number of Granulosa Cells"))
@@ -384,7 +384,7 @@ ScrollPane buildPane() {
     pane.add(labelMaxGranulosaCells, 0, row, 1, 1)
     pane.add(maxGranulosaCells, 1, row, 1, 1)
     
-    def maxCuboidGCNumber = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 10, 1, 1));
+    def maxCuboidGCNumber = new Spinner<>(new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 10, 2, 1));
     maxCuboidGCNumber.setEditable(true);
     FXUtils.restrictTextFieldInputToNumber(maxCuboidGCNumber.getEditor(), true);
     maxCuboidGCNumber.setTooltip(new Tooltip("Maximum cuboidal GC Number"))
